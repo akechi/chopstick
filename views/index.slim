@@ -1,0 +1,13 @@
+doctype 5
+html lang="ja"
+  head
+    meta charset="UTF-8"
+    title Chopstick!
+    link rel="stylesheet" href="/application.css"
+    script src="http://code.jquery.com/jquery-latest.js"
+    script src="/application.js"
+  body
+    img src="images/chopstick.png"
+    br
+    - for x in @chopsticks
+      a href="/code/#{x[:slug]}" = x.url
